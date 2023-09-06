@@ -1,7 +1,7 @@
 // ==================== change language //////////////////
 function changeLanguage(language) {
   document.getElementById("selectedLanguage").innerHTML =
-    '<img class="lang-img" src="./images/' +
+    '<img class="lang-img" alt="not found" src="./images/' +
     language.toLowerCase() +
     '.svg"/> ' +
     "<span class='font-12 fw-500 gray-text'>" +

@@ -6,7 +6,7 @@ $(document).ready(function () {
     speed: 700,
     dots: true,
     customPaging: function (slick, index) {
-      return "<a>" + (index + 1) + "</a>";
+      return "<a href='#'>" + (index + 1) + "</a>";
     },
     arrows: false,
   };
