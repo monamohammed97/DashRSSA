@@ -1,0 +1,62 @@
+.about-us-card {
+  .box-card {
+    width: calc((100% - 20px) /2) !important;
+    min-height: 280px;
+    padding: 40px;
+  }
+
+  .box-card .text {
+    line-height: 30px;
+  }
+}
+
+.about-us {
+  .inner-subscribe {
+    box-shadow: 0px 0px 50px 0px rgba(144, 144, 144, 0.10);
+  }
+
+  .btn-send {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .history-section,
+  .who-we {
+    .width-50 {
+      width: 100%;
+    }
+  }
+
+  .image {
+    max-height: 300px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .about-us-card {
+    .box-card {
+      width: 100% !important;
+      min-height: auto;
+    }
+
+    .font-18.gray-text {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      min-height: auto;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .image {
+    max-height: 250px;
+  }
+
+  .history-section .mb-30 {
+    margin-bottom: 10px;
+  }
+}

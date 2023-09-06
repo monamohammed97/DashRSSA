@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> RSSA </title>
+  <link rel="icon" type="image/x-icon" href="#">
+
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../css/customSpace.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/style-rtl.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+  <main>
+
+    <section class="dropdown-lang w-100">
+      <div class="inner-box d-flex justify-content-end gap-10">
+        <div class="search-box">
+          <input type="search" class="form-control font-12 gray-text fw-500 h-100" placeholder="Search">
+          <img src="../images/search.svg" alt="search" class="search">
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false" id="selectedLanguage">
+            <img src="../images/english.svg" class="lang-img" />
+            <span class="font-12 fw-500 gray-text">English</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item font-14 fw-500 gray-text" href="#" onclick="changeLanguage('Arabic')">
+                <span class="font-12 fw-500 gray-text">Arabic</span>
+                <img src="../images/arabic.svg" class="lang-img" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item font-14 fw-500 gray-text" href="#" onclick="changeLanguage('English')">
+                <span class="font-12 fw-500 gray-text">English</span>
+                <img src="../images/english.svg" class="lang-img" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-login font-12 text-white p-0">
+          LOGIN/SIGN UP
+        </button>
+      </div>
+    </section>
+    <!-- header -->
+    <header class="mb-30">
+      <div class="inner-box header">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="container-fluid align-items-end p-0">
+            <a class="navbar-brand p-0 m-0" href="../index.html">
+              <img src="../images/logo.svg" alt="logo" class="object-contain">
+            </a>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav align-items-end me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link font-14 fw-500 gray-text active" aria-current="page" href="../index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle font-14 fw-500 gray-text" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    About Rssa
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item font-14 fw-500 gray-text" href="../aboutUS.html">About Rssa</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="#">
+                    Sponsorship
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle font-14 fw-500 gray-text" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Media Center
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item font-14 fw-500 gray-text" href="../blog.html">Media Center</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="../president.html">
+                    Events
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="#">
+                    Membership
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="../contactUs.html">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- News -->
+    <section class="blog-section">
+      <div class="inner-box">
+        <div class="d-flex align-items-center gap-1">
+          <img src="../images/Vector.png" alt="not found" class="vector">
+          <a href="#" class="gray-text font-14 fw-500">Rssa | Media Center | </a>
+          <span class="main-text font-14 fw-500"> News </span>
+        </div>
+        <div class="d-flex flex-wrap gap-20 py-30 align-items-center justify-content-between">
+          <div class="w-680">
+            <h2 class="main-text font-40 fw-bold mb-20">
+              Minimally Invasive Fistula Creation A Promising Option For Dialysis Patients
+            </h2>
+            <div class="d-flex align-items-center gap-10">
+              <img src="../images/calenderDate.svg" alt="not found" class="img-calender">
+              <span class="font-16 fw-500">OCTOBER 26, 2022</span>
+            </div>
+          </div>
+          <div class="image">
+            <img src="../images/blog.png" alt="not found" class="h-100 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- text -->
+    <section class="blog-text">
+      <div class="inner-box">
+        <p class="blue-text fw-600 text-title mb-20">
+          <i class="fa-solid fa-circle"></i>
+          <span class="font-24 d-block">
+            Cross-specialty collaboration can offer long-term benefits to patients
+          </span>
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          A novel non-surgical approach that creates a fistula in the arm for dialysis access offers people with
+          end-stage kidney disease a promising new option with a high success rate and minimal complications.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          Patients with end-stage kidney disease require dialysis, either through the abdomen (peritoneal dialysis) or
+          via hemodialysis, the more common option. With hemodialysis, blood is pumped out of the patient’s body into an
+          “artificial kidney” dialysis machine that filters the blood before the blood is returned to the body. Safe,
+          easy access to the blood vessels is critically important since patients typically undergo hemodialysis three
+          times a week.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          A surgical arteriovenous fistula (sAVF) has become the mainstay of vascular access creation and results in a
+          surgically created connection between an artery and vein in the arm. It has advantages over other methods such
+          as superior patency and lower thrombosis rates but also carries limitations, including the finite anatomic
+          options for creation, high rates of non-maturation and the need for reintervention.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-30 font-16">
+          A new method known as percutaneous arteriovenous fistula (pAVF) creation offers a minimally invasive option
+          that does not require surgical incision or vessel manipulation.
+        </p>
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- perforator-->
+    <section class="perforator-section">
+      <div class="inner-box">
+        <div class="d-flex flex-wrap gap-20 mb-20 align-items-center">
+          <div class="width-50">
+            <p class="paragraph font-16 line-40 fw-600 mb-0">
+              Illustration shows the anatomy of the arterial and venous systems at the antecubital fossa.
+            </p>
+            <p class="paragraph font-16 line-40 fw-600 mb-0">
+              The presence of the perforator vein (pink) is essential for any pAVF procedure.
+            </p>
+            <p class="paragraph font-16 line-40 fw-600 mb-0">
+              The perforator vein connects the deep venous system (dark blue) to the superficial venous system (light
+              blue).
+              <br />
+              <a href="https://doi.org/10.1148/rg.220010" class="main-text">
+                https://doi.org/10.1148/rg.220010
+              </a>
+            </p>
+          </div>
+          <div class="width-50 image">
+            <img src="../images/m3 1.png" alt="not found" class="object-cover h-100">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end History-->
+
+    <!-- text -->
+    <section class="blog-text py-30">
+      <div class="inner-box">
+        <p class="blue-text fw-600 text-title mb-20">
+          <i class="fa-solid fa-circle"></i>
+          <span class="font-24 d-block">
+            Benefits to Patients
+          </span>
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          During the pAVF procdure, the doctor uses imaging to guide a tiny catheter device through the relevant blood
+          vessels in the arm. The pAVF device—through either radiofrequency pulse or thermal energy—forms a connection
+          between the vein and artery that allows blood to pass between them. The entire procedure takes approximately
+          30 minutes.
+        </p>
+        <p class="main-text fw-500 line-30 mb-0">
+          “Early clinical results appear promising, with high maturation rates and functional patency and low rates of
+          reintervention, which may translate to potential long-term health care savings,”
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          <span class="main-text">said Ounali Jaffer</span>, MRCP, FRCR, interventional radiologist at Royal London
+          Hospital in London and lead author
+          of a RadioGraphics article on the topic. His co-author is Geoffrey Lie, FRCR, also an interventional
+          radiologist at Royal London Hospital.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          Benefits for the patient include the potential for reduced lifestyle disruption with fewer reinterventions and
+          hospitalization requirements. In addition the procedure does not leave behind a surgical scar and reduces the
+          likelihood of aneurysmal formation owing to the split outflow. Candidates for pAVF formation include
+          pre-dialysis patients, patients already undergoing dialysis, those with failing renal transplant or failing
+          peritoneal dialysis and patients with previous surgically formed arteriovenous fistulae or grafts.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          Conscious sedation or general anesthesia are not necessary, although individual institutional practice may
+          vary,<span class="main-text">Dr. Jaffer said</span> . At his institution, <span class="main-text">Dr.
+            Jaffer</span> works alongside an anesthetist or a suitably trained
+          practitioner who can administer a regional nerve block for patients. The nerve block prevents arm movement
+          during the procedure and can also promote vessel dilatation and minimize vessel spasm.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          <span class="main-text"> Dr. Jaffer</span> emphasized that even though pAVF has numerous benefits, it is not
+          intended to be a replacement for other forms of dialysis access. Instead, it adds to the complement of
+          access options available. </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          “There is no one-size fits all approach, and the most appropriate access has to be matched to the individual
+          patient on a case-by-case basis,” <span class="main-text">Dr. Jaffer sai</span>d. Importantly, pAVF creation
+          does not preclude future
+          vascular access options.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          The authors recommend a “distal to proximal” approach to pAVF creation to ensure that the full breadth of
+          access options can be sequentially used, preserving proximal vessels for future vascular access sites.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          “Early clinical results appear promising, with high maturation rates and functional patency and low rates of
+          reintervention, which may translate to potential long-term health care savings.”
+        </p>
+        <p class="font-18 main-text fw-600 mb-30">OUNALI JAFFER, MRCP, FRCR</p>
+        <p class="blue-text fw-600 text-title mb-20">
+          <i class="fa-solid fa-circle"></i>
+          <span class="font-24 d-block">
+            Adding pAVF to Available Clinical Options
+          </span>
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          The learning curve period for pAVF creation is estimated to be between five and 10 cases for operators with US
+          and endovascular proficiency.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          “As with any interventional radiology procedure, the learning curve reflects familiarity with the relevant
+          anatomy, appreciation of how the device works, and common troubleshooting scenarios including requisite
+          secondary interventions,”<span class="main-text">Dr. Jaffer said</span> .
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          Introducing a pAVF service requires the collaboration of a cross-specialty multidisciplinary team, <span
+            class="main-text">Dr. Jaffer said</span>, including both nonclinical and clinical stakeholders who are
+          aligned and unified in adopting a pAVF
+          service. The service must offer accurate US screening for appropriate patient selection and safe follow-up
+          surveillance with re-intervention as necessary.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          Issues that relate to all dialysis access such as timely recognition of end-stage kidney disease and patient
+          waiting times for access placement remain highly relevant,”<span class="main-text">Dr. Jaffer said</span>.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          In the near term,<span class="main-text">Dr. Jaffer</span>and his research team hope that pAVFs will be
+          recognized within both national and
+          international guidelines and become more established as part of the standard framework when considering
+          dialysis access.
+        </p>
+        <p class="paragraph fw-500 line-30 mb-20 font-16">
+          “We are excited to see what the future holds for pAVFs,”<span class="main-text">Dr. Jaffer said</span>. “As
+          more data continues to emerge
+          and more centers share their experiences in different patient populations, the evidence base will continue to
+          grow and we will gain a better idea of which patient subgroups benefit most from pAVF.”
+        </p>
+        <a class="font-18 main-text fw-600 mb-30" href="https://pubs.rsna.org/doi/10.1148/rg.220010">
+          https://pubs.rsna.org/doi/10.1148/rg.220010
+        </a>
+        <hr class="hr">
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- News section -->
+    <section class="news-section py-100 blog-card">
+      <div class="inner-box">
+        <h2 class="main-text font-30 fw-600 mb-40 text-center text-capitalize">read our latest News</h2>
+        <div class="news-card d-flex flex-wrap gap-20">
+          <div class="box-card">
+            <div class="img-card mb-10 mx-auto">
+              <img src="../images/blog.png" alt="not found" class="object-cover">
+            </div>
+            <div class="p-10">
+              <span class="paragraph font-14 fw-500 mb-10 d-block">OCTOBER 26, 2022</span>
+              <h4 class="font-16 main-text fw-600 mb-3">Minimally Invasive Fistula Creation A Promising.. </h4>
+              <a href="#" class="read-more text-capitalize gray-text fw-bold font-12 d-block fst-italic">
+                read More
+              </a>
+            </div>
+          </div>
+          <div class="box-card">
+            <div class="img-card mb-10 mx-auto">
+              <img src="../images/shutterstock_777196891 1.png" alt="not found" class="object-cover">
+            </div>
+            <div class="p-10">
+              <span class="paragraph font-14 fw-500 mb-10 d-block">OCTOBER 26, 2022</span>
+              <h4 class="font-16 main-text fw-600 mb-3"> RSSA Expansion</h4>
+              <a href="#" class="read-more text-capitalize gray-text fw-bold font-12 d-block fst-italic">
+                read More
+              </a>
+            </div>
+          </div>
+          <div class="box-card">
+            <div class="img-card mb-10 mx-auto">
+              <img src="../images/Mask group1.png" alt="not found" class="object-cover">
+            </div>
+            <div class="p-10">
+              <span class="paragraph font-14 fw-500 mb-10 d-block">OCTOBER 26, 2022</span>
+              <h4 class="font-16 main-text fw-600 mb-3">Preoperative MRI as a Screening Tool for .. </h4>
+              <a href="#" class="read-more text-capitalize gray-text fw-bold font-12 d-block fst-italic">
+                read More
+              </a>
+            </div>
+          </div>
+          <div class="box-card">
+            <div class="img-card mb-10 mx-auto">
+              <img src="../images/img13.PNG" alt="not found" class="object-cover">
+            </div>
+            <div class="p-10">
+              <span class="paragraph font-14 fw-500 mb-10 d-block">OCTOBER 26, 2022</span>
+              <h4 class="font-16 main-text fw-600 mb-3"> RSSA Expansion</h4>
+              <a href="#" class="read-more text-capitalize gray-text fw-bold font-12 d-block fst-italic">
+                read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end News section -->
+
+    <!-- footer -->
+    <footer class="py-20">
+      <div class="inner-box">
+        <div class="d-flex flex-wrap gap-20">
+          <div class="w-278">
+            <div class="logo-footer mb-10">
+              <img src="../images/logo.svg" alt="not found" class="object-contain">
+            </div>
+            <p class="gray-text font-12 line-20 fw-500 mb-20">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et dolore magna
+              aliqua.
+            </p>
+            <div>
+              <p class="main-text fw-bold font-14 mb-10">Follow Us</p>
+              <div class="icons">
+                <a href="#" class="icon">
+                  <i class="fa-brands fa-facebook-f text-white font-12"></i>
+                </a>
+                <a href="#" class="icon">
+                  <i class="fa-brands fa-twitter text-white font-12"></i>
+                </a>
+                <a href="#" class="icon">
+                  <i class="fa-brands fa-youtube text-white font-12"></i>
+                </a>
+                <a href="#" class="icon">
+                  <i class="fa-brands fa-instagram text-white font-12"></i>
+                </a>
+                <a href="#" class="icon">
+                  <i class="fa-brands fa-linkedin-in text-white font-12"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-70">
+            <ul class="list-unstyled">
+              <li class="main-text fw-bold font-14 mb-10 text-capitalize">About RSSA</li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Who We Are</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">President Message</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Privacy Policy</a>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li class="main-text fw-bold font-14 mb-10 text-capitalize">Annual Meetings</li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Annual Meetings</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Programs</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Webinar</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Registration</a>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li class="main-text fw-bold font-14 mb-10 text-capitalize">Media Center</li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">News</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Blogs</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Resources</a>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li class="main-text fw-bold font-14 mb-10 text-capitalize">Membership</li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Become A Member</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Benefits Of Being A Member</a>
+              </li>
+              <li>
+                <a href="#" class="gray-text fw-500 font-10 mb-10">Membership Fees</a>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="main-text fw-bold font-14 mb-10 text-capitalize">Sponsorship</a>
+              </li>
+              <li>
+                <a href="#" class="main-text fw-bold font-14 mb-10 text-capitalize">event</a>
+              </li>
+              <li>
+                <a href="#" class="main-text fw-bold font-14 mb-10 text-capitalize">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-center">
+          <span class="gray-text font-10 text-capitalize">Copyright ©2023 By rssa . All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+  </main>
+
+  <!-- bootstrap -->
+  <script src="../libs/jQuery.js"></script>
+  <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+
+  <!-- custom -->
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>

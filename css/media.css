@@ -1,0 +1,583 @@
+@media (max-width: 1449.98px) {
+  .img1 {
+    top: 1600px;
+    right: -37%;
+    z-index: -2;
+  }
+
+  .img2 {
+    top: 3000px;
+    left: -39%;
+    z-index: -2;
+  }
+
+  .img3 {
+    top: 3500px;
+    right: -37%;
+    z-index: -2;
+  }
+
+}
+
+@media (max-width: 1399.98px) {
+  .img1 {
+    top: 1600px;
+    right: -50%;
+    z-index: -2;
+  }
+
+  .img2 {
+    top: 3000px;
+    left: -50%;
+    z-index: -2;
+  }
+
+  .img3 {
+    top: 3500px;
+    right: -50%;
+    z-index: -2;
+  }
+
+  .slider-section {
+    .text-slider {
+      padding: 80px 0 80px 80px;
+    }
+  }
+
+  .hero-section {
+    .text-box {
+      padding: 80px;
+      min-height: 435px;
+    }
+  }
+
+  .image-box {
+    width: 280px;
+    height: 330px;
+  }
+
+  .president-message {
+    .bg-image {
+      width: 450px;
+      height: 450px;
+    }
+  }
+
+  .btn-more {
+    height: 60px;
+  }
+
+  .contact-section {
+    padding: 100px 0;
+  }
+
+}
+
+@media (max-width: 1299.98px) {
+  .inner-box {
+    width: 90%;
+  }
+
+  .slider-section {
+    .text-slider {
+      padding: 80px 60px;
+      padding-right: 0;
+    }
+  }
+
+  .hero-section {
+    .text-box {
+      padding: 60px;
+      min-height: 435px;
+    }
+
+    .text-box .font-14.mb-0 {
+      width: 75%;
+    }
+  }
+
+  .cards-section {
+    .box-card {
+      min-height: 250px;
+    }
+
+    .text {
+      min-height: 72px;
+    }
+  }
+
+  .news-section {
+    .main-text {
+      line-height: 20px;
+      min-height: 40px;
+    }
+
+    .box-card {
+      width: calc((100% - 40px) /3);
+      min-height: 330px;
+    }
+  }
+
+  .gallery-section {
+    .person-card {
+      width: calc((100% - 40px)/3);
+      margin-bottom: 0;
+    }
+
+    .view-link {
+      margin-top: 40px;
+    }
+  }
+
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  footer {
+    .gap-70 {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .list-unstyled {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+@media (max-width: 1199.98px) {
+  .img1 {
+    top: 1600px;
+    right: -60%;
+    z-index: -2;
+  }
+
+  .img2 {
+    top: 3000px;
+    left: -60%;
+    z-index: -2;
+  }
+
+  .img3 {
+    top: 3500px;
+    right: -60%;
+    z-index: -2;
+  }
+
+  .hero-section {
+    & .text-box {
+      width: 80%;
+      padding: 40px;
+      min-height: 375px;
+    }
+
+    .text-box .font-14.mb-0 {
+      width: 90%;
+      line-height: 25px;
+    }
+  }
+
+  .image-box {
+    width: 250px;
+    height: 300px;
+  }
+
+  .cards-section {
+    .box-card {
+      width: calc((100% - 40px)/ 3);
+    }
+
+    & .text {
+      min-height: 55px;
+    }
+  }
+
+  .president-message {
+    & .bg-image {
+      width: 350px;
+      height: 350px;
+    }
+
+    .person-card {
+      width: calc((100% - 40px)/2);
+      margin-bottom: 0;
+    }
+  }
+
+  .contact-section {
+    padding-bottom: 0;
+  }
+
+  .contact-section {
+    .form {
+      width: 85%;
+    }
+  }
+
+  .images-box {
+    .second {
+      top: 0px;
+    }
+
+    & .sixth {
+      top: 160px;
+    }
+
+    & .seventh {
+      bottom: 0;
+    }
+
+    .fourth {
+      top: 110px;
+    }
+
+    .fifth {
+      top: 180px;
+    }
+
+    .online {
+      top: 20px;
+    }
+  }
+
+}
+
+@media (max-width: 991.98px) {
+
+  .img1,
+  .img2,
+  .img3 {
+    display: none;
+  }
+
+  header {
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+
+    .nav-item {
+      width: 100%;
+    }
+  }
+
+  .mobile {
+    box-shadow: 1px 3px 6px #ddd;
+    border-radius: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 20px 10px !important;
+    border: 0 !important;
+    text-align: start;
+  }
+
+  .dropdown-item {
+    text-align: start;
+  }
+
+  .navbar-nav .dropdown-menu {
+    border: 0;
+    background: #f2f2f2a6;
+  }
+
+  .navbar-toggler:is(:focus, :hover),
+  .navbar-toggler {
+    box-shadow: none;
+    border: 0;
+  }
+
+  header+section {
+    margin-top: 7rem;
+  }
+
+  .slider-section {
+    margin-bottom: 20px;
+
+    .slider-item {
+      flex-wrap: wrap;
+    }
+
+    .slider-item .text-slider {
+      padding: 40px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .font-35 {
+      width: 100%;
+    }
+
+    .btn-more {
+      margin: auto;
+    }
+
+    .images-box {
+      margin: auto;
+    }
+
+    .images-box .bg-image {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  .image-box {
+    width: 200px;
+    height: 250px;
+  }
+
+  .president-message {
+    .width-50 {
+      width: 100%;
+    }
+
+    .person-card {
+      width: calc((100% - 40px)/3);
+    }
+
+    & .font-40 {
+      width: 420px;
+    }
+
+    .text-section h2,
+    .text-section>p,
+    .text-section span {
+      text-align: center;
+    }
+
+    .text-section h2 {
+      margin: auto;
+    }
+
+    .image-section {
+      width: 55%;
+      margin: auto;
+    }
+  }
+
+  .gallery-section,
+  .news-section {
+
+    & .box-card,
+    & .person-card {
+      width: calc((100% - 20px) /2);
+    }
+  }
+
+  .subscribe-section {
+    .inner-subscribe {
+      width: 85%;
+    }
+
+    .email-box {
+      width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  .slider-section {
+    .btn-watch {
+      height: 50px;
+    }
+
+    .text-slider {
+      width: 100%;
+    }
+  }
+
+  .hero-section {
+    .image-box {
+      display: none;
+    }
+
+    & .text-box .font-14.mb-0,
+    .text-box {
+      width: 100%;
+    }
+  }
+
+  .cards-section {
+    .box-card {
+      width: calc((100% - 20px)/ 2);
+    }
+  }
+
+  .gallery-section {
+    .person-card {
+      min-height: 300px;
+    }
+
+    .font-14 {
+      font-size: 14px;
+    }
+  }
+
+  .contact-section {
+    .form {
+      width: 100%;
+    }
+  }
+
+  footer {
+    .gap-70 {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .search-box {
+    display: none;
+  }
+
+  header .navbar-brand {
+    width: 130px;
+  }
+
+  .slider-section {
+    & .images-box {
+      width: 90%;
+    }
+
+    .slider-item .text-slider {
+      padding: 40px 22px;
+    }
+
+    .btn-watch {
+      left: 0;
+    }
+
+    .online {
+      left: auto;
+    }
+  }
+
+  .president-message {
+    margin-bottom: 60px;
+
+    .cards-section .person-card {
+      width: calc((100% - 20px)/2);
+      margin: auto;
+    }
+
+    .bg-image {
+      bottom: -40px;
+    }
+
+    .image-section {
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding-top: 30px;
+  }
+
+  .btn-more {
+    height: 55px;
+  }
+
+  .gallery-section,
+  .news-section {
+
+    .person-card,
+    .box-card {
+      width: 75%;
+      margin: auto;
+    }
+  }
+
+  .gallery-section {
+    & .person-card {
+      height: 300px;
+    }
+
+    .hover {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: 399.98px) {
+  .slider-section {
+    .third {
+      top: 110px;
+    }
+
+    & .second {
+      top: 50px;
+    }
+
+    .online {
+      top: 0;
+    }
+
+    & .fifth {
+      left: 190px;
+    }
+  }
+
+  .cards-section {
+    .box-card {
+      width: 100%;
+    }
+
+    & .text {
+      min-height: auto;
+    }
+  }
+
+  .president-message {
+    .font-40 {
+      width: 100%;
+    }
+
+    .image-section {
+      width: 100%;
+    }
+
+    & .bg-image {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  .gallery-section,
+  .news-section {
+
+    .person-card,
+    .box-card {
+      width: 100%;
+    }
+  }
+
+  .news-section {
+    .main-text {
+      min-height: auto;
+    }
+  }
+
+  .contact-section {
+    padding: 60px 0 0 0;
+
+    .width-50 {
+      width: 100% !important;
+    }
+  }
+
+  .subscribe-section {
+    .inner-subscribe {
+      width: 90%;
+      padding: 50px 16px;
+    }
+  }
+}
