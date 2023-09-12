@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Task Dash">
+  <meta name="description" content="Dash Task">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dash Task">
+
   <title> RSSA </title>
   <link rel="icon" type="image/x-icon" href="#">
 
@@ -30,105 +32,117 @@
 </head>
 
 <body>
-  <main>
-    <section class="dropdown-lang w-100">
-      <div class="inner-box d-flex justify-content-end gap-10">
-        <div class="search-box">
-          <input type="search" class="form-control font-12 gray-text fw-500 h-100" placeholder="Search">
-          <img src="../images/search.svg" alt="search" class="search">
-        </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false" id="selectedLanguage">
-            <img src="../images/english.svg" class="lang-img" />
-            <span class="font-12 fw-500 gray-text">English</span>
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item font-14 fw-500 gray-text" href="#" onclick="changeLanguage('Arabic')">
-                <span class="font-12 fw-500 gray-text">Arabic</span>
-                <img src="../images/arabic.svg" class="lang-img" />
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item font-14 fw-500 gray-text" href="#" onclick="changeLanguage('English')">
-                <span class="font-12 fw-500 gray-text">English</span>
-                <img src="../images/english.svg" class="lang-img" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button class="btn btn-login font-12 text-white p-0">
-          LOGIN/SIGN UP
-        </button>
-      </div>
-    </section>
-    <!-- header -->
-    <header class="mb-30">
-      <div class="inner-box header">
-        <nav class="navbar navbar-expand-lg p-0">
-          <div class="container-fluid align-items-end p-0">
-            <a class="navbar-brand p-0 m-0" href="../index.html">
-              <img src="../images/logo.svg" alt="logo" class="object-contain">
-            </a>
-            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav align-items-end me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link font-14 fw-500 gray-text active" aria-current="page" href="../index.html">
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle font-14 fw-500 gray-text" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    About Rssa
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item font-14 fw-500 gray-text" href="../aboutUS.html">About Rssa</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="#">
-                    Sponsorship
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle font-14 fw-500 gray-text" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Media Center
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item font-14 fw-500 gray-text" href="../blog.html">Media Center</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="../president.html">
-                    Events
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="#">
-                    Membership
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-14 fw-500 gray-text" aria-current="page" href="../contactUs.html">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <main class="position-relative">
+    <!-- fixed header -->
+    <section class="fixed-header position-fixed w-100">
+      <section class="dropdown-lang w-100">
+        <div class="inner-box d-flex justify-content-end gap-10">
+          <div class="search-box">
+            <input type="search" class="form-control font-12 gray-text fw-500 h-100" id="search"
+              data-lang-placeholder="english" placeholder="Search">
+            <img src="../images/search.svg" alt="search" class="search">
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header -->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" id="selectedLanguage">
+              <img src="../images/english.svg" class="lang-img" />
+              <span class="font-12 fw-500 gray-text">English</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item font-14 fw-500 gray-text" href="#" onclick="changeLanguage('Arabic')">
+                  <span class="font-12 fw-500 gray-text" id="langBtn" data-lang="english">Arabic</span>
+                  <img src="../images/arabic.svg" class="lang-img" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item font-14 fw-500 gray-text" href="#" onclick="changeLanguage('English')">
+                  <span class="font-12 fw-500 gray-text" id="langBtnen" data-lang="english">English</span>
+                  <img src="../images/english.svg" class="lang-img" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-login font-12 text-white py-0 px-2" id="login" data-lang="english">
+            LOGIN/SIGN UP
+          </button>
+        </div>
+      </section>
+
+      <!-- header -->
+      <header class="pb-30">
+        <div class="inner-box header">
+          <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid align-items-end p-0">
+              <a class="navbar-brand p-0 m-0" href="../index.html">
+                <img src="../images/logo.svg" alt="logo" class="object-contain">
+              </a>
+              <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-end me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link font-14 fw-500 gray-text active" aria-current="page" id="Home"
+                      data-lang="english" href="../index.html">
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-14 fw-500 gray-text" href="#" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false" id="AboutRssa" data-lang="english">
+                      About Rssa
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item font-14 fw-500 gray-text" href="./aboutUS.html">About Rssa</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link font-14 fw-500 gray-text" aria-current="page" id="Sponsorship"
+                      data-lang="english" href="#">
+                      Sponsorship
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-14 fw-500 gray-text" href="#" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false" id="MediaCenter" data-lang="english">
+                      Media Center
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item font-14 fw-500 gray-text" href="./blog.html">Media Center</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link font-14 fw-500 gray-text" aria-current="page" id="Events" data-lang="english"
+                      href="./president.html">
+                      Events
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link font-14 fw-500 gray-text" aria-current="page" id="Membership" data-lang="english"
+                      href="#">
+                      Membership
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link font-14 fw-500 gray-text" aria-current="page" id="ContactUs" data-lang="english"
+                      href="./contactUs.html">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header -->
+    </section>
+    <!-- end fixed header -->
 
     <!-- Contact Us -->
     <section class="contact-us">

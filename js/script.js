@@ -1,7 +1,9 @@
 // ==================== change language //////////////////
+const currentPath = window.location.pathname;
+
 function changeLanguage(language) {
   document.getElementById("selectedLanguage").innerHTML =
-    '<img class="lang-img" alt="not found" src="./images/' +
+    `<img class="lang-img" alt="not found" src="${currentPath.includes('pages')?'.':''}./images/` +
     language.toLowerCase() +
     '.svg"/> ' +
     "<span class='font-12 fw-500 gray-text'>" +

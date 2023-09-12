@@ -49,6 +49,7 @@
 
   & .images-box {
     margin-left: 100px;
+    margin: auto !important;
   }
 
   .slick-dots {
@@ -71,6 +72,17 @@
     height: 320px;
   }
 
+  .btn-watch {
+    flex-direction: row-reverse;
+  }
+
+}
+
+/* ========================== header =================== */
+[dir=rtl] header nav .dropdown-toggle {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
 }
 
 /* ==================== hero section ====================== */

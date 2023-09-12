@@ -199,6 +199,20 @@ header {
     font-weight: 600;
   }
 
+  .navbar-nav .nav-link.active::after {
+    border-top-color: var(--main-color);
+  }
+
+}
+
+.fixed-header {
+  background-color: #fffF;
+  z-index: 1;
+  top: 0;
+}
+
+.fixed-header+section {
+  margin-top: 115px;
 }
 
 #carousel {
@@ -349,11 +363,14 @@ header {
     background-color: var(--main-color);
   }
 
+  .slick-dots li a {
+    color: #FFF;
+  }
+
   .slick-dots li {
     width: 23px;
     height: 23px;
     background-color: var(--blue-text);
-    color: #FFF;
     font-size: 12px;
     font-weight: 500;
     display: flex;
