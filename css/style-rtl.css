@@ -16,10 +16,9 @@
   font-family: Janna;
 }
 
-[dir=rtl] .gap-70 {
+/* [dir=rtl] .gap-70 {
   gap: 20px 100px;
-
-}
+} */
 
 [dir=rtl] .search-box {
   .search {
