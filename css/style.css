@@ -731,6 +731,10 @@ footer {
     height: 45px;
   }
 
+  .gap-70 {
+    justify-content: space-between;
+  }
+
   .w-278 {
     width: 278px;
   }
